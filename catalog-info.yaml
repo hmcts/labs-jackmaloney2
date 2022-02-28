@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "jack-lab-test2-jackmaloney"
+  description: This is a test from JM
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_jack-lab-test2/labs-jackmaloney2
+    github.com/project-slug: 'hmcts/labs-jackmaloney2'
+  tags:
+    - java
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=cloud-native
+      title: cloud-native on Slack
+      icon: chat
+spec:
+  type: service
+  system: jack-lab-test2
+  lifecycle: experimental
+  owner: dts_cft_developers

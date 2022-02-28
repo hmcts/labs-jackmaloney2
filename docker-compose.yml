@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  jackmaloney:
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    image: hmctspublic.azurecr.io/jack-lab-test2/jackmaloney
+    ports:
+      - $SERVER_PORT:$SERVER_PORT
