@@ -1,4 +1,4 @@
-package uk.gov.hmcts.jack-lab-test2.jackmaloney;
+package uk.gov.hmcts.jacklabtest2.jackmaloney;
 
 import org.junit.jupiter.api.Test;
 
