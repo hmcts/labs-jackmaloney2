@@ -4,9 +4,9 @@ import static org.springframework.http.MediaType.TEXT_PLAIN_VALUE;
 import static org.springframework.http.ResponseEntity.ok;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,13 +17,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @ApiOperation(value = "Test api",
-        notes = "This is a test endpoint",
-        response = String.class
+    @Operation(summary = "Test api",
+        description = "This is a test endpoint"
     )
     @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "A test message"),
-        @ApiResponse(code = 404, message = "No welcome could be found")
+        @ApiResponse(responseCode = "200", description = "A test message"),
+        @ApiResponse(responseCode = "404", description = "No welcome could be found")
     })
     @RequestMapping(value = "/testing", method = GET, produces = TEXT_PLAIN_VALUE)
     public ResponseEntity<String> welcome() {
