@@ -1,8 +1,8 @@
 package uk.gov.hmcts.reform.controllers;
 
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,13 +17,12 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @RestController
 public class RootController {
 
-    @ApiOperation(value = "Get welcome api",
-        notes = "This is a welcome endpoint",
-        response = String.class
+    @Operation(summary = "Get welcome api",
+        description = "This is a welcome endpoint"
     )
     @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "A welcome message"),
-        @ApiResponse(code = 404, message = "No welcome could be found")
+        @ApiResponse(responseCode = "200", description = "A welcome message"),
+        @ApiResponse(responseCode = "404", description = "No welcome could be found")
     })
     @RequestMapping(value = "/", method = GET, produces = TEXT_PLAIN_VALUE)
     public ResponseEntity<String> welcome() {
