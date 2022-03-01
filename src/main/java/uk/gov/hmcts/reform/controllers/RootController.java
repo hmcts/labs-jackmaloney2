@@ -1,4 +1,4 @@
-package uk.gov.hmcts.jacklabtest2.jackmaloney.controllers;
+package uk.gov.hmcts.reform.controllers;
 
 import static org.springframework.http.MediaType.TEXT_PLAIN_VALUE;
 import static org.springframework.http.ResponseEntity.ok;

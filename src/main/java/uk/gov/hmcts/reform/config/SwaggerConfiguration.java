@@ -1,4 +1,4 @@
-package uk.gov.hmcts.jacklabtest2.jackmaloney.config;
+package uk.gov.hmcts.reform.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,7 +7,7 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-import uk.gov.hmcts.jacklabtest2.jackmaloney.Application;
+import uk.gov.hmcts.reform.Application;
 
 @Configuration
 @EnableSwagger2
