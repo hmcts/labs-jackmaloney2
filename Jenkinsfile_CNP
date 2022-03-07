@@ -3,7 +3,7 @@
 @Library("Infrastructure")
 
 def type = "java"
-def product = "jack-lab-test2"
+def product = "labs"
 def component = "jackmaloney"
 
 // docs:

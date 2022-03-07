@@ -8,7 +8,7 @@ properties([
 @Library("Infrastructure")
 
 def type = "java"
-def product = "jack-lab-test2"
+def product = "labs"
 def component = "jackmaloney"
 
 // docs: https://github.com/hmcts/cnp-jenkins-library#nightly-pipeline
