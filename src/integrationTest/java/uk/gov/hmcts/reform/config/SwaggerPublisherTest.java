@@ -41,7 +41,7 @@ class SwaggerPublisherTest {
         try (OutputStream outputStream = Files.newOutputStream(Paths.get("/tmp/swagger-specs.json"))) {
             outputStream.write(specs);
         }
-        assertEquals("Foo equals bar","true", "true");
+        assertEquals("true","true", "Foo equals bar");
 
     }
 }
