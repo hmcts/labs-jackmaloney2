@@ -23,7 +23,7 @@ jobs:
       - name: Run Backstage API gen
         run: |
           echo "$(cat api-example.yaml)" > /tmp/labs-jackmaloney2-api.yaml
-          echo "$(cat /tmp/swagger-specs.json)" >> /tmp/labs-jackmaloney2-api.yaml
+          echo "    $(cat /tmp/swagger-specs.json)" >> /tmp/labs-jackmaloney2-api.yaml
       - name: Commit to repository
         run: |
           mkdir swagger-staging
