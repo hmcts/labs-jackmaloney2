@@ -52,6 +52,8 @@ jobs:
           git remote add upstream "https://jenkins-reform-hmcts:${{ secrets.SWAGGER_PUBLISHER_API_TOKEN }}@github.com/hmcts/reform-api-docs.git"
           git pull upstream master
           repo=`echo "$GITHUB_REPOSITORY" | cut -f2- -d/`
+          mkdir -p docs/specs
+          mkdir -p docs/backstage
           echo "$(cat /tmp/swagger-specs.json)" > "docs/specs/send-letter-service.json"
           echo "$(cat /tmp/labs-jackmaloney2-api.yaml)" > "docs/backstage/labs-jackmaloney2-api.yaml"
           git add "docs/specs/send-letter-service.json"
