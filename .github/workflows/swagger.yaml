@@ -22,7 +22,7 @@ jobs:
         run: ./gradlew integration --tests uk.gov.hmcts.reform.config.SwaggerPublisherTest
       - name: Run Backstage API gen
         run: |
-          echo (EOF
+          API_STRING=$(cat << EOF
           apiVersion: backstage.io/v1alpha1
           kind: API
           metadata:
@@ -38,7 +38,9 @@ jobs:
             lifecycle: experimental
             owner: dts_cft_developers
             definition: |
-          EOF) > /tmp/labs-jackmaloney2-api.yaml
+          EOF
+          )
+          echo $API_STRING > /tmp/labs-jackmaloney2-api.yaml
           echo "$(cat /tmp/swagger-specs.json)" >> /tmp/labs-jackmaloney2-api.yaml 
       - name: Commit to repository
         run: |
