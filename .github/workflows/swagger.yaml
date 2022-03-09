@@ -22,26 +22,8 @@ jobs:
         run: ./gradlew integration --tests uk.gov.hmcts.reform.config.SwaggerPublisherTest
       - name: Run Backstage API gen
         run: |
-          API_STRING=$(cat << EOF
-          apiVersion: backstage.io/v1alpha1
-          kind: API
-          metadata:
-            name: labs-jackmaloney2
-            description: Jack Maloney's test API
-            links:
-              - url: https://hmcts-reform.slack.com/app_redirect?channel=cloud-native
-                title: cloud-native on Slack
-                icon: chat
-          spec:
-            type: openapi
-            system: jack-lab-test2
-            lifecycle: experimental
-            owner: dts_cft_developers
-            definition: |
-          EOF
-          )
-          echo $API_STRING > /tmp/labs-jackmaloney2-api.yaml
-          echo "$(cat /tmp/swagger-specs.json)" >> /tmp/labs-jackmaloney2-api.yaml 
+          echo "$(cat api-example.yaml)" > /tmp/labs-jackmaloney2-api.yaml
+          echo "$(cat /tmp/swagger-specs.json)" >> /tmp/labs-jackmaloney2-api.yaml
       - name: Commit to repository
         run: |
           mkdir swagger-staging
