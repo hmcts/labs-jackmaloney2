@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: "jack-lab-test2-jackmaloney"
-  description: Updated this is a test from JM
+  description: This is a test from JM!
   annotations:
     # This must match folder-name/job-name in Jenkins.
     jenkins.io/job-full-name: cft:HMCTS_jack-lab-test2/labs-jackmaloney2
