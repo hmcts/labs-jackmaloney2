@@ -28,4 +28,16 @@ public class TestController {
     public ResponseEntity<String> welcome() {
         return ok("Hello and welcome to the test");
     }
+
+    @Operation(summary = "Another Api",
+        description = "This is another endpoint"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Another message"),
+        @ApiResponse(responseCode = "404", description = "No another could be found")
+    })
+    @RequestMapping(value = "/another", method = GET, produces = TEXT_PLAIN_VALUE)
+    public ResponseEntity<String> another() {
+        return ok("Hello and welcome to another test");
+    }
 }
