@@ -29,8 +29,8 @@ public class TestController {
         return ok("Hello and welcome to the test");
     }
 
-    @Operation(summary = "Another Api",
-        description = "This is another endpoint"
+    @Operation(summary = "Another api updated",
+        description = "This is another endpoint updated"
     )
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "Another message"),
