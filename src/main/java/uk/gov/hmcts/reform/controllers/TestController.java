@@ -18,10 +18,10 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 public class TestController {
 
     @Operation(summary = "Test api",
-        description = "This is a test endpoint"
+        description = "This is a test endpoint updated"
     )
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "A test message"),
+        @ApiResponse(responseCode = "200", description = "A test message updated"),
         @ApiResponse(responseCode = "404", description = "No welcome could be found")
     })
     @RequestMapping(value = "/testing", method = GET, produces = TEXT_PLAIN_VALUE)
