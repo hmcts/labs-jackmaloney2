@@ -18,6 +18,8 @@ The CoE (Center of Excellence) at HMCTS needs a documented way to capture signif
 
 We decided to adopt a standard ADR template that includes the following sections: Context, Decision, Consequences, Alternatives Considered, Related Decisions, and Status. This template will be used by all teams in HMCTS when documenting architectural or significant technical choices.
 
+---
+
 ## Consequences
 
 ### Pros
@@ -42,6 +44,8 @@ We decided to adopt a standard ADR template that includes the following sections
 
 - Adoption resistance: teams might resist using a formal template, especially if not convinced of its value.
 
+---
+
 ## Alternatives Considered
 
 - No standard template: Allow each team to write ADRs as they see fit. Rejected because it perpetuates inconsistency and makes it harder to share knowledge.
@@ -49,6 +53,7 @@ We decided to adopt a standard ADR template that includes the following sections
 - Lightweight ADRs: Very minimal ADR format (e.g. only Title, Decision, Status). Considered, but rejected because missing details reduce usefulness in long-term decision tracking and auditing.
 
 - Adopt an external ADR tool or service: Use third-party ADR tools or platforms. Rejected because we want control, integration with existing workflows, version control, and minimal external dependencies.
+
 ---
 
 ## Further Considerations
