@@ -1,10 +1,12 @@
 ---
 Title: Example ADR template
 Date: 2025-09-17
-Status: Proposed
 Deciders: Jack Maloney, Hen Wagner
 Technical Story: As part of the Center of Excellence at HMCTS, we want to see an example of an ADR template so that we can create our own ADRs for future decisions.
 ---
+## Status
+
+Proposed — under review by CoE team.
 
 ## Context
 
@@ -14,7 +16,7 @@ The CoE (Center of Excellence) at HMCTS needs a documented way to capture signif
 
 ## Decision
 
-We decide to adopt a standard ADR template that includes the following sections: Context, Decision, Consequences, Alternatives Considered, Related Decisions, and Status. This template will be used by all teams in HMCTS when documenting architectural or significant technical choices.
+We decided to adopt a standard ADR template that includes the following sections: Context, Decision, Consequences, Alternatives Considered, Related Decisions, and Status. This template will be used by all teams in HMCTS when documenting architectural or significant technical choices.
 
 ## Consequences
 
@@ -49,18 +51,9 @@ We decide to adopt a standard ADR template that includes the following sections:
 - Adopt an external ADR tool or service: Use third-party ADR tools or platforms. Rejected because we want control, integration with existing workflows, version control, and minimal external dependencies.
 ---
 
-## Related Decisions
+## Further Considerations
 
-- Decision on review process for ADRs (who reviews, how often).
+- Is there anything else that should be considered or included in this ADR?
 
-- Decision on where ADRs are stored (e.g. CoE docs repo vs each project’s repo).
-
-- Decision on when an ADR should be created (which kinds of decisions merit ADRs).
-
-- Decision on when an ADR becomes accepted, deprecated, superseded, etc.
 ---
-
-## Status
-
-Proposed — under review by CoE team.
 
