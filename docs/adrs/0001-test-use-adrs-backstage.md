@@ -31,7 +31,7 @@ We decided to adopt a standard ADR template that includes the following sections
 - Helps future teams understand past decisions, making change, refactoring, or deprecation safer.
 
 - Can be used to help AI/LLMs to accurately summarise changes in product decisions.
--
+
 ### Cons / Risks
 
 - Some overhead: teams will need to spend time filling in all template sections, especially early on or for smaller decisions.
