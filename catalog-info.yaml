@@ -7,6 +7,7 @@ metadata:
     # This must match folder-name/job-name in Jenkins.
     jenkins.io/job-full-name: cft:HMCTS_jack-lab-test2/labs-jackmaloney2
     github.com/project-slug: 'hmcts/labs-jackmaloney2'
+    backstage.io/adr-location: docs/adrs
   tags:
     - java
   links:
