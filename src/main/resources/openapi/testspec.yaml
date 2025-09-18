@@ -78,10 +78,10 @@
         ]
       }
     },
-    "/jason": {
+    "/demo": {
       "get": {
         "description": "This is another endpoint updated",
-        "operationId": "jasonTest",
+        "operationId": "demo",
         "responses": {
           "200": {
             "content": {
@@ -91,7 +91,7 @@
                 }
               }
             },
-            "description": "Jason's endpoint"
+            "description": "This is a demo endpoint"
           },
           "404": {
             "content": {
