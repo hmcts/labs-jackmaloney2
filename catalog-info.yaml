@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "jack-lab-test2-jackmaloney"
-  description: This is a test from JM2!
+  name: "jack-lab-component"
+  description: This is a test from JM
   annotations:
     # This must match folder-name/job-name in Jenkins.
     jenkins.io/job-full-name: cft:HMCTS_jack-lab-test2/labs-jackmaloney2
@@ -27,8 +27,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: labs-jackmaloney2
-  description: Jack Maloney’s test API - new config 2
+  name: labs-jackmaloney-api
+  description: Jack Maloney’s test API
   annotations:
     github.com/project-slug: 'hmcts/labs-jackmaloney2'
 spec:
@@ -36,6 +36,6 @@ spec:
   lifecycle: experimental
   owner: dts_cft_developers
   system: jack-lab-test2
-  apiProvidedBy: jack-lab-test2-jackmaloney
+  apiProvidedBy: jack-lab-component
   definition:
     $text: https://raw.githubusercontent.com/hmcts/labs-jackmaloney2/master/src/main/resources/openapi/testspec.yaml
