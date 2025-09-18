@@ -20,7 +20,7 @@ metadata:
   description: This is a test example of a Backstage component for HMCTS
   annotations:
     # This must match folder-name/job-name in Jenkins.
-    jenkins.io/job-full-name: cft:HMCTS_my-job/jenkins-pipeline
+    jenkins.io/job-full-name: cft:HMCTS_j_to_z/my-project-pipeline
     github.com/project-slug: 'hmcts/my-project-name'
   tags:
     - java
