@@ -25,7 +25,7 @@ For an example of how to structure a HMCTS ADR, please see this [template](https
 
 <img width="1556" height="971" alt="Backstage ADR Screenshot" src="https://github.com/user-attachments/assets/d3d964b1-2bbb-4486-90dc-39608755c75c" />
 
-Further details about the ADR Backstage plugin can be found [here](https://backstage.io/docs/features/techdocs/adr).
+Further details about the ADR Backstage plugin can be found [here](https://github.com/backstage/community-plugins/tree/main/workspaces/adr/plugins/adr).
 
 ## Notes
 
