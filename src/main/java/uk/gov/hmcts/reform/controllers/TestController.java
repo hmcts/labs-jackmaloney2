@@ -41,15 +41,15 @@ public class TestController {
         return ok("Hello and welcome to another test");
     }
 
-    @Operation(summary = "This is a test for Jason",
+    @Operation(summary = "This is a test for Demo purposes",
         description = "This is another endpoint updated"
     )
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Jason's endpoint"),
+        @ApiResponse(responseCode = "200", description = "Demo endpoint"),
         @ApiResponse(responseCode = "404", description = "No another could be found")
     })
-    @RequestMapping(value = "/jason", method = GET, produces = TEXT_PLAIN_VALUE)
-    public ResponseEntity<String> jasonTest() {
-        return ok("Hello and welcome to Jason's test");
+    @RequestMapping(value = "/demo", method = GET, produces = TEXT_PLAIN_VALUE)
+    public ResponseEntity<String> demoTest() {
+        return ok("Hello and welcome to a demo");
     }
 }
