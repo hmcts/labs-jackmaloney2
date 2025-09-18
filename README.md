@@ -1,8 +1,29 @@
-# jack-lab-test2-jackmaloney
+# Backstage HMCTS Examples
 
+This project is intended to be used to produce examples of features that can be used for some of the plugins within the HMCTS instance of Backstage.
 
-The application exposes health endpoints (http://localhost:8080/health) and metrics endpoint
-(http://localhost:8080/metrics).
+To see the examples in use please visit the [Backstage HMCTS Sandbox instance](https://backstage-sandbox.hmcts.net/)
+
+# Features
+
+The following Backstage features can be experimented with in this project:
+
+## Architectual Decision Records (ADRs)
+
+An ADR is a document that captures an important architectural decision made along with its context and consequences. This project contains an example of how to create and manage ADR's within Backstage.
+
+To display ADR's in HMCTS Backstage, ensure the catalog-info.yaml for your project file contains the following annotation:
+
+```yaml
+metadata:
+  annotations:
+    backstage.io/adr-location: docs/adrs
+```
+and then in the root of your project create a directory called `docs/adrs` and add your ADR markdown files there. Once merged, your ADR should appear in Backstage when it next syncs the catalog.
+
+For an example of how to structure a HMCTS ADR, please see this [template](https://tools.hmcts.net/confluence/display/DATS/ADR+Template).
+
+Further details about the ADR Backstage plugin can be found [here](https://backstage.io/docs/features/techdocs/adr).
 
 ## Notes
 
