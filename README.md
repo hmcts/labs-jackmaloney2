@@ -6,9 +6,69 @@ To see the examples in use please visit the [Backstage HMCTS Sandbox instance](h
 
 # Features
 
-The following Backstage features can be experimented with in this project:
+The following Backstage features can be experimented within this project:
 
-## Architectual Decision Records (ADRs)
+## Backstage Software Catalog
+
+To make use of the Backstage Software Catalog for your project, ensure your project is registered as a component by creating (or updating) the `catalog-info.yaml` file in the route of your project:
+
+```yaml
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "my-project-name-component"
+  description: This is a test example of a Backstage component for HMCTS
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_my-job/jenkins-pipeline
+    github.com/project-slug: 'hmcts/my-project-name'
+  tags:
+    - java
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=cloud-native
+      title: cloud-native on Slack
+      icon: chat
+spec:
+  type: service
+  system: my-project
+  lifecycle: experimental
+  owner: dts_cft_developers
+```
+
+## API's
+
+To make use of the Backstage API's feature for your project, ensure you register the API by updating `catalog-info.yaml` file in the route of your project for each Open API spec you want to register:
+
+Add this to the Component part of the `catalog-info.yaml` file from above:
+```yaml
+spec:
+  --- existing config ---
+  providesApis:
+  - my-project-api
+```
+And then add the following to the end of the `catalog-info.yaml` file:
+```yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: my-project-api
+  description: This is an API for my project
+  annotations:
+    github.com/project-slug: 'hmcts/my-project-name'
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: dts_cft_developers
+  system: my-project
+  apiProvidedBy: my-project-name-component
+  definition:
+    $text: https://raw.githubusercontent.com/hmcts/backstage-hmcts-examples/master/src/main/resources/openapi/testspec.yaml
+```
+
+If you have multiple API's to register, simply add another section starting with `---` and change the `metadata.name` and `spec.definition.$text` values accordingly.
+
+## Architectural Decision Records (ADRs)
 
 An ADR is a document that captures an important architectural decision made along with its context and consequences. This project contains an example of how to create and manage ADR's within Backstage.
 
@@ -17,7 +77,9 @@ To display ADR's in HMCTS Backstage, ensure the catalog-info.yaml for your proje
 ```yaml
 metadata:
   annotations:
+    --- exisitng config ---
     backstage.io/adr-location: docs/adrs
+   ---
 ```
 and then in the root of your project create a directory called `docs/adrs` and add your ADR markdown files there. Once merged, your ADR should appear in Backstage when it next syncs the catalog.
 
