@@ -5,7 +5,7 @@ metadata:
   description: This is a test example of a Backstage component for HMCTS
   annotations:
     # This must match folder-name/job-name in Jenkins.
-    jenkins.io/job-full-name: cft:HMCTS_backstage-hmcts-examples/backstage-hmcts-examples
+    jenkins.io/job-full-name: cft:HMCTS_j_to_z/backstage-hmcts-examples
     github.com/project-slug: 'hmcts/backstage-hmcts-examples'
     backstage.io/adr-location: docs/adrs
   tags:
