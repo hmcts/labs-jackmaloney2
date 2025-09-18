@@ -20,7 +20,7 @@ spec:
   lifecycle: experimental
   owner: dts_cft_developers
   providesApis:
-    - labs-jackmaloney2
+    - labs-jackmaloney-api
 
 ---
 
