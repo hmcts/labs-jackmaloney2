@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "jack-lab-component"
-  description: This is a test from JM
+  name: "backstage-hmcts-examples-component"
+  description: This is a test example of a Backstage component for HMCTS
   annotations:
     # This must match folder-name/job-name in Jenkins.
-    jenkins.io/job-full-name: cft:HMCTS_jack-lab-test2/labs-jackmaloney2
-    github.com/project-slug: 'hmcts/labs-jackmaloney2'
+    jenkins.io/job-full-name: cft:HMCTS_backstage-hmcts-examples/backstage-hmcts-examples
+    github.com/project-slug: 'hmcts/backstage-hmcts-examples'
     backstage.io/adr-location: docs/adrs
   tags:
     - java
@@ -16,26 +16,26 @@ metadata:
       icon: chat
 spec:
   type: service
-  system: jack-lab-test2
+  system: backstage-hmcts-examples
   lifecycle: experimental
   owner: dts_cft_developers
   providesApis:
-    - labs-jackmaloney-api
+    - backstage-hmcts-examples-api
 
 ---
 
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: labs-jackmaloney-api
-  description: Jack Maloney’s test API
+  name: backstage-hmcts-examples-api
+  description: This is test API to show examples of Backstage API entity for HMCTS
   annotations:
-    github.com/project-slug: 'hmcts/labs-jackmaloney2'
+    github.com/project-slug: 'hmcts/backstage-hmcts-examples'
 spec:
   type: openapi
   lifecycle: experimental
   owner: dts_cft_developers
-  system: jack-lab-test2
-  apiProvidedBy: jack-lab-component
+  system: backstage-hmcts-examples
+  apiProvidedBy: backstage-hmcts-examples-component
   definition:
-    $text: https://raw.githubusercontent.com/hmcts/labs-jackmaloney2/master/src/main/resources/openapi/testspec.yaml
+    $text: https://raw.githubusercontent.com/hmcts/backstage-hmcts-examples-component/master/src/main/resources/openapi/testspec.yaml
