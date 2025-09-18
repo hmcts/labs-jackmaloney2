@@ -38,4 +38,4 @@ spec:
   system: backstage-hmcts-examples
   apiProvidedBy: backstage-hmcts-examples-component
   definition:
-    $text: https://raw.githubusercontent.com/hmcts/backstage-hmcts-examples-component/master/src/main/resources/openapi/testspec.yaml
+    $text: https://raw.githubusercontent.com/hmcts/backstage-hmcts-examples/master/src/main/resources/openapi/testspec.yaml
