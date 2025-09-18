@@ -38,4 +38,4 @@ spec:
   system: jack-lab-test2
   apiProvidedBy: jack-lab-test2-jackmaloney
   definition:
-    $text: https://raw.githubusercontent.com/hmcts/reform-api-docs/master/docs/backstage/labs-jackmaloney2-api.yaml
+    $text: https://raw.githubusercontent.com/hmcts/labs-jackmaloney2/master/src/main/resources/openapi/testspec.yaml

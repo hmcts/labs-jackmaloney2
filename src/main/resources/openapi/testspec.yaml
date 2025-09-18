@@ -1,0 +1,152 @@
+{
+  "components": {},
+  "externalDocs": {
+    "description": "README",
+    "url": "https://github.com/hmcts/labs-jackmaloney2"
+  },
+  "info": {
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "title": "Jack's API",
+    "version": "v0.0.1"
+  },
+  "openapi": "3.0.1",
+  "paths": {
+    "/": {
+      "get": {
+        "description": "This is a welcome endpoint",
+        "operationId": "welcome_1",
+        "responses": {
+          "200": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "A welcome message"
+          },
+          "404": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "No welcome could be found"
+          }
+        },
+        "summary": "Get welcome api",
+        "tags": [
+          "root-controller"
+        ]
+      }
+    },
+    "/another": {
+      "get": {
+        "description": "This is another endpoint updated",
+        "operationId": "another",
+        "responses": {
+          "200": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Another message"
+          },
+          "404": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "No another could be found"
+          }
+        },
+        "summary": "Another api updated",
+        "tags": [
+          "test-controller"
+        ]
+      }
+    },
+    "/jason": {
+      "get": {
+        "description": "This is another endpoint updated",
+        "operationId": "jasonTest",
+        "responses": {
+          "200": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Jason's endpoint"
+          },
+          "404": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "No another could be found"
+          }
+        },
+        "summary": "This is a test for Jason",
+        "tags": [
+          "test-controller"
+        ]
+      }
+    },
+    "/testing": {
+      "get": {
+        "description": "This is a test endpoint updated",
+        "operationId": "welcome",
+        "responses": {
+          "200": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "A test message updated"
+          },
+          "404": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "No welcome could be found"
+          }
+        },
+        "summary": "Test api",
+        "tags": [
+          "test-controller"
+        ]
+      }
+    }
+  },
+  "servers": [
+    {
+      "description": "Generated server url",
+      "url": "http://localhost"
+    }
+  ]
+}
