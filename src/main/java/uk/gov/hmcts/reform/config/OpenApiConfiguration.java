@@ -13,7 +13,7 @@ public class OpenApiConfiguration {
     @Bean
     public OpenAPI openApi() {
         return new OpenAPI()
-            .info(new Info().title("Jack's API")
+            .info(new Info().title("Backstage Example API")
                       .version("v0.0.1")
                       .license(new License().name("MIT").url("https://opensource.org/licenses/MIT")))
             .externalDocs(new ExternalDocumentation()

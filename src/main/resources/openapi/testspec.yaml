@@ -9,7 +9,7 @@
       "name": "MIT",
       "url": "https://opensource.org/licenses/MIT"
     },
-    "title": "Jack's API",
+    "title": "Backstage Example Swagger API",
     "version": "v0.0.1"
   },
   "openapi": "3.0.1",
