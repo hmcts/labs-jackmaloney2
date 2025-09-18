@@ -28,7 +28,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: labs-jackmaloney2
-  description: Jack Maloney’s test API - new config
+  description: Jack Maloney’s test API - new config 2
   annotations:
     github.com/project-slug: 'hmcts/labs-jackmaloney2'
 spec:
@@ -37,6 +37,5 @@ spec:
   owner: dts_cft_developers
   system: jack-lab-test2
   apiProvidedBy: jack-lab-test2-jackmaloney
-  definition: |
-    {"openapi":"3.0.1","info":{"title":"Jack's API2","license":{"name":"MIT","url":"https://opensource.org/licenses/MIT"},"version":"v0.0.1"},"externalDocs":{"description":"README","url":"https://github.com/hmcts/labs-jackmaloney2"},"servers":[{"url":"http://localhost","description":"Generated server url"}],"paths":{"/testing":{"get":{"tags":["test-controller"],"summary":"Test api","description":"This is a test endpoint","operationId":"welcome","responses":{"404":{"description":"No welcome could be found","content":{"text/plain":{"schema":{"type":"string"}}}},"200":{"description":"A test message","content":{"text/plain":{"schema":{"type":"string"}}}}}}},"/":{"get":{"tags":["root-controller"],"summary":"Get welcome api","description":"This is a welcome endpoint","operationId":"welcome_1","responses":{"404":{"description":"No welcome could be found","content":{"text/plain":{"schema":{"type":"string"}}}},"200":{"description":"A welcome message","content":{"text/plain":{"schema":{"type":"string"}}}}}}}},"components":{}}
-
+  definition:
+    $text: https://raw.githubusercontent.com/hmcts/reform-api-docs/master/docs/backstage/labs-jackmaloney2-api.yaml
