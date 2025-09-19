@@ -1,7 +1,7 @@
-# Overview
+# Another Tech Doc
 
-This is an example Tech Doc
+This is another example Tech Doc
 
-## Description
+## Context
 
 Example of a Tech Doc in Backstage
