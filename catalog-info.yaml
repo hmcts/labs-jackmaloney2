@@ -7,7 +7,7 @@ metadata:
     # This must match folder-name/job-name in Jenkins.
     jenkins.io/job-full-name: cft:HMCTS_j_to_z/backstage-hmcts-examples
     github.com/project-slug: 'hmcts/backstage-hmcts-examples'
-    backstage.io/techdocs-ref: docs/techdocs
+    backstage.io/techdocs-ref: dir:.
     backstage.io/adr-location: docs/adrs
   tags:
     - java
