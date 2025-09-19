@@ -6,3 +6,4 @@ nav:
       - Another subpage: techdocs/example-tech-doc.md
 plugins:
   - techdocs-core
+  - markdown_inline_mermaid
