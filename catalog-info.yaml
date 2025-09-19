@@ -29,7 +29,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: backstage-hmcts-examples-api
-  description: This is test API to show examples of Backstage API entity for HMCTS
+  description: This is a test API to show examples of Backstage API entity for HMCTS
   annotations:
     github.com/project-slug: 'hmcts/backstage-hmcts-examples'
 spec:
