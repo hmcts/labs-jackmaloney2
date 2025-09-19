@@ -7,6 +7,8 @@ This is another example Tech Doc
 Example of a Tech Doc in Backstage
 
 ```mermaid
-graph TD
-  A --> B
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+John-->>Alice: Great!
+Alice-)John: See you later!
 ```
