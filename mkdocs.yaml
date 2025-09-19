@@ -1,7 +1,8 @@
-site_name: 'Golden path - Java'
+site_name: 'Backstage HMCTS Examples'
 
 nav:
-  - Getting started: index.md
-
+  - Index page: techdocs/index.md
+  - Another section:
+      - Another subpage: techdocs/subpage.md
 plugins:
   - techdocs-core
