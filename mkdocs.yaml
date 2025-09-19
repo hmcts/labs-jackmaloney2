@@ -1,6 +1,3 @@
-markdown_extensions:
-  - markdown_inline_mermaid
-
 site_name: 'Backstage HMCTS Examples'
 
 nav:
