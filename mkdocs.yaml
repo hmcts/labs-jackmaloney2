@@ -1,0 +1,7 @@
+site_name: 'Golden path - Java'
+
+nav:
+  - Getting started: another-test.md
+
+plugins:
+  - techdocs-core
